@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+
+@keyframes move-bg {
+    from { background-position: 0px 0vh; }
+    to { background-position: 0px 500px; }
+}
+
+body {
+    background-color: #000;
+    background-image: url("noise.png");
+    background-size: 500px;
+    /* animation: move-bg 0.5s steps(20, start) infinite; */
+
+    font-family: "Inconsolata" !important;
+    font-size: 12px !important;
+    /* background: #000 !important; */
+    color: #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Inknut Antigua" !important;
+    color: #ff7f27 !important;
+    font-weight: bold !important;
+}
+h1 {
+    font-size: 65px !important;
+}
+
+a {
+    color: inherit !important;
+    font-weight: bold;
+    text-decoration: wavy #00f underline !important;
+}
+a:hover {
+    text-decoration-color: #f00 !important;
+}
+img {
+    image-rendering: pixelated;
+}
+img:hover {
+    /* filter: hue-rotate(50deg); */
+    filter: brightness(120%);
+    cursor: help;
+}
+.barcode {
+    font-family: "Libre Barcode 128";
+    /* padding: 5px;
+    border-radius: 3px;
+    background: #fff;
+    color: #222; */
+    font-size: 16px;
+}
+.window {
+    outline: 2px groove #999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.window-header {
+    background: #ff7f27;
+    border: 2px outset #ffae00;
+    padding: 5px;
+    margin: 0px !important;
+}
+button {
+    font-family: "Inconsolata" !important;
+    font-size: 10px !important;
+    color: #fff;
+    font-weight: bold;
+    background: #6b5544;
+    border: 2px outset #9c806a;
+}
